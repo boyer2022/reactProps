@@ -1,3 +1,8 @@
+import PropTypes from 'type-check'
+
+//  propTypes = a mechanism that ensures that the passed value
+//                  is of the correct datatype.
+//                  age: PropTypes.number
 
 function Student(props) {
 
@@ -11,5 +16,11 @@ function Student(props) {
     )
 
 }
-
+// Using propTypes- 
+//              be sure to import from node_modules folder, propTypes (type-check...?)
+Student.propTypes = {
+    name: PropTypes.string,
+    age: PropTypes.number,
+    isStudent: PropTypes.bool,
+}
 export default Student
